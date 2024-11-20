@@ -14,14 +14,19 @@ public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
 	@Column(name = "first_name", nullable = false)
 	private String firstName;
+	
 	@Column(name = "last_name")
 	private String lastName;
+	
 	@Column(name = "enrollment")
 	private String enrollment;
+	
 	@Column(name = "email")
 	private String email;
+	
 	@Column(name = "career")
 	private String career;
 	
@@ -30,13 +35,13 @@ public class Student {
 
 	}
 
-	public Student(String firstName, String lastName, String enrollment, String email, String carrer) {
+	public Student(String firstName, String lastName, String enrollment, String email, String career) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.enrollment = enrollment;
 		this.email = email;
-		this.career = carrer;
+		this.career = career;
 	}
 	
 	public Long getId() {
@@ -69,11 +74,11 @@ public class Student {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getCarrer() {
+	public String getCareer() {
 		return career;
 	}
-	public void setCarrer(String carrer) {
-		this.career = carrer;
+	public void setCarrer(String career) {
+		this.career = career;
 	}
 
 	
