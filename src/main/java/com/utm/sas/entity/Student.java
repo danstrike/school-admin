@@ -77,7 +77,7 @@ public class Student {
 	public String getCareer() {
 		return career;
 	}
-	public void setCarrer(String career) {
+	public void setCareer(String career) {
 		this.career = career;
 	}
 
