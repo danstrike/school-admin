@@ -54,7 +54,7 @@
 					<td th:text = "${student.enrollment}"></td>
 					<td th:text = "${student.email}"></td>
 					<td th:text = "${student.career}"></td>
-					<td></td>
+					<td><a th:href="@{/students/edit/{id}(id=${student.id})}" class="btn btn-primary">Update</a></td>
 				</tr>
 			</tbody>
 		</table>
